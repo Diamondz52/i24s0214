@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crossword Editor</title>
+  </head>
+
+  <template id="word-selector-dialog">
+    <div class="dialog-overlay">
+      <div class="dialog">
+        <h3>Разместить слово</h3>
+        <select id="dialog-word-select">
+          <option value="">-- Выберите слово из списка --</option>
+        </select>
+        <div class="orientation-buttons">
+          <button id="orientation-horizontal" class="orientation-btn">Горизонтально →</button>
+          <button id="orientation-vertical" class="orientation-btn">Вертикально ↓</button>
+        </div>
+        <div class="dialog-buttons">
+          <button id="dialog-cancel" class="dialog-btn cancel">Отмена</button>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
